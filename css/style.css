@@ -165,11 +165,11 @@ a.pub-title:hover { color: var(--primary-color); text-decoration: underline; }
 .member-group h2 { font-size: 1.5rem; font-weight: 800; margin-bottom: 24px; border-bottom: 2px solid var(--border-color); padding-bottom: 10px; }
 
 .pi-card {
-  display: grid; grid-template-columns: 260px minmax(0, 1fr); gap: 36px;
+  display: grid; grid-template-columns: 200px minmax(0, 1fr); gap: 36px;
   background: var(--card-bg); border: 1px solid var(--border-color); border-radius: 16px;
   padding: 36px; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.03);
 }
-.pi-photo { width: 100%; height: 320px; background: #e2e8f0; border-radius: 12px; overflow: hidden; }
+.pi-photo { width: 100%; height: 250px; background: #e2e8f0; border-radius: 12px; overflow: hidden; }
 .pi-photo img { width: 100%; height: 100%; object-fit: cover; display: block; }
 .pi-contact { list-style: none; margin-top: 18px; display: flex; flex-direction: column; gap: 14px; font-size: 0.9rem; }
 .pi-contact-label { display: block; font-size: 0.75rem; font-weight: 800; letter-spacing: 0.5px; text-transform: uppercase; color: var(--primary-color); margin-bottom: 3px; }
@@ -266,7 +266,7 @@ a.pub-title:hover { color: var(--primary-color); text-decoration: underline; }
   .header-right { gap: 10px; }
 
   .pi-card { grid-template-columns: minmax(0, 1fr); padding: 24px; gap: 24px; }
-  .pi-photo { max-width: 260px; height: 300px; }
+  .pi-photo { max-width: 200px; height: 250px; }
   .member-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
 
@@ -387,3 +387,9 @@ a.research-card:hover::after { opacity: 1; transform: translateX(0); }
 .research-refs a { color: var(--primary-color); font-weight: 600; }
 .research-refs a:hover { text-decoration: underline; }
 .hero h1 { max-width: 700px; }
+
+/* Publications: 제목 굵게 / 저자 / 학술지(기울임) / DOI 링크 */
+.pub-title { font-weight: 700; display: block; }
+.pub-journal em { font-style: italic; }
+.pub-link { display: inline-block; margin-top: 6px; color: var(--primary-color); font-size: 0.85rem; font-weight: 600; }
+.pub-link:hover { text-decoration: underline; }

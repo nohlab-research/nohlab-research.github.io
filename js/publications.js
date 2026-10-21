@@ -1,36 +1,35 @@
 /* ==========================================================================
-   js/publications.js - Publications 페이지 렌더링 (데이터: publications-data.js)
-   최신 논문이 위, 번호는 가장 오래된 논문 = 1번 → 최신 = 마지막 번호
+   js/publications.js - Publications 페이지 (데이터: data/publications.json)
+   새 논문은 data/publications.json 에 한 줄만 추가하면 홈·목록·개수가 함께 갱신됩니다.
+   최신 논문이 위, 번호는 가장 오래된 논문 = 1번
    ========================================================================== */
 (function () {
-  const esc = (s) => String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
+  const esc = (s) => String(s == null ? "" : s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
   const authors = (a) => esc(a).replace(/\*\*(.+?)\*\*/g, "<strong>$1</strong>");
+  const ext = 'target="_blank" rel="noopener noreferrer"';
 
   document.addEventListener("DOMContentLoaded", () => {
     const list = document.getElementById("pub-list");
-    if (!list || typeof PUBLICATIONS === "undefined") return;
+    if (!list) return;
+    fetch("data/publications.json").then((r) => r.json()).then((data) => {
+      const items = data.map((p, i) => ({ ...p, _i: i }));
+      items.sort((a, b) => b.y - a.y || a._i - b._i);
+      items.forEach((p, i) => (p.n = items.length - i));
 
-    const items = PUBLICATIONS.map((p, i) => ({ ...p, n: i + 1 }));
-    const byYear = new Map();
-    items.forEach((p) => {
-      if (!byYear.has(p.y)) byYear.set(p.y, []);
-      byYear.get(p.y).push(p);
-    });
-
-    const html = [];
-    [...byYear.keys()].sort((a, b) => b - a).forEach((year) => {
-      const group = byYear.get(year);
-      html.push(`<li class="pub-year-heading"><h2>${year}<span class="pub-year-count">${group.length}</span></h2></li>`);
-      group.slice().reverse().forEach((p) => {
-        const title = p.u
-          ? `<a href="${esc(p.u)}" target="_blank" rel="noopener noreferrer" class="pub-title">${esc(p.t)}</a>`
-          : `<span class="pub-title">${esc(p.t)}</span>`;
-        html.push(`<li class="pub-item"><span class="pub-number">${p.n}</span><div class="pub-details">${title}<p class="pub-authors">${authors(p.a)}</p><p class="pub-journal">${esc(p.j)}</p></div></li>`);
+      const html = []; let year = null;
+      items.forEach((p) => {
+        if (p.y !== year) {
+          year = p.y;
+          html.push(`<li class="pub-year-heading"><h2>${year}<span class="pub-year-count">${items.filter((x) => x.y === year).length}</span></h2></li>`);
+        }
+        const link = p.u ? `<a class="pub-link" href="${esc(p.u)}" ${ext}>${/doi\.org/.test(p.u) ? "DOI" : "Link"} ↗</a>` : "";
+        html.push(`<li class="pub-item"><span class="pub-number">${p.n}</span><div class="pub-details"><span class="pub-title">${esc(p.t)}</span><p class="pub-authors">${authors(p.a)}</p><p class="pub-journal"><em>${esc(p.j)}</em></p>${link}</div></li>`);
       });
+      list.innerHTML = html.join("");
+      const total = document.getElementById("pub-total-count");
+      if (total) total.textContent = items.length;
+    }).catch(() => {
+      list.innerHTML = '<li class="feed-empty">논문 데이터를 불러오지 못했습니다. 웹 서버(또는 GitHub Pages)에서 열어 주세요.</li>';
     });
-    list.innerHTML = html.join("");
-
-    const total = document.getElementById("pub-total-count");
-    if (total) total.textContent = PUBLICATIONS.length;
   });
 })();
