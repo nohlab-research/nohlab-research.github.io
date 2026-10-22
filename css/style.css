@@ -393,3 +393,7 @@ a.research-card:hover::after { opacity: 1; transform: translateX(0); }
 .pub-journal em { font-style: italic; }
 .pub-link { display: inline-block; margin-top: 6px; color: var(--primary-color); font-size: 0.85rem; font-weight: 600; }
 .pub-link:hover { text-decoration: underline; }
+
+/* 설명글 삭제 후 제목 아래 간격 */
+.page-title { margin-bottom: 28px; }
+.pub-total { margin: 0 0 24px; }
