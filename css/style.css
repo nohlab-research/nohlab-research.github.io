@@ -397,3 +397,24 @@ a.research-card:hover::after { opacity: 1; transform: translateX(0); }
 /* 설명글 삭제 후 제목 아래 간격 */
 .page-title { margin-bottom: 28px; }
 .pub-total { margin: 0 0 24px; }
+
+/* ==========================================================================
+   KO/EN 전환 시 위치가 흔들리지 않도록 고정
+   - 언어 버튼 폭 고정 (EN ↔ KO 글자 폭 차이로 메뉴가 밀리던 문제)
+   - 배너 높이/글줄 영역 고정 (언어별 문장 길이 차이로 배너가 변하던 문제)
+   ========================================================================== */
+.lang-btn { min-width: 52px; text-align: center; }
+.brand-name, .brand-affil, .site-nav a { white-space: nowrap; }
+.hero { min-height: 540px; display: flex; align-items: center; }
+.hero-inner { width: 100%; }
+.hero .tagline { display: block; min-height: 1.5em; }
+.hero h1 { min-height: 2.5em; }          /* 제목 2줄 분량 확보 (line-height 1.25 × 2) */
+.hero .subtitle { min-height: 3.4em; }   /* 설명 2줄 분량 확보 (line-height 1.7 × 2) */
+@media (max-width: 640px) {
+  .hero { min-height: 0; }
+  .hero h1 { min-height: 3.75em; }       /* 모바일: 영문 제목 3줄 */
+  .hero .subtitle { min-height: 6.8em; } /* 모바일: 설명 4줄 */
+  .hero .tagline { min-height: 3em; }    /* 모바일: 2줄 */
+  .hero-cta { flex-wrap: nowrap; gap: 10px; }
+  .hero-cta .btn { flex: 1 1 auto; padding: 12px 14px; white-space: nowrap; text-align: center; }
+}
