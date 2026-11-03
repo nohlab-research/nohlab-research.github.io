@@ -11,7 +11,7 @@
   document.addEventListener("DOMContentLoaded", () => {
     const list = document.getElementById("pub-list");
     if (!list) return;
-    fetch("data/publications.json").then((r) => r.json()).then((data) => {
+    fetch("data/publications.json", { cache: "no-cache" }).then((r) => r.json()).then((data) => {
       const items = data.map((p, i) => ({ ...p, _i: i }));
       items.sort((a, b) => b.y - a.y || a._i - b._i);
       items.forEach((p, i) => (p.n = items.length - i));

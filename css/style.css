@@ -186,6 +186,7 @@ a.pub-title:hover { color: var(--primary-color); text-decoration: underline; }
 .pi-ic-email { color: var(--text-muted); }
 .pi-ic-orcid { color: #A6CE39; }
 .pi-ic-scholar { color: #4285F4; }
+.pi-ic-pubmed { color: #326599; }
 .pi-header { margin-bottom: 16px; }
 .pi-name { font-size: 1.6rem; font-weight: 800; margin-bottom: 4px; }
 .pi-title { color: var(--primary-dark); font-weight: 700; font-size: 1rem; }
