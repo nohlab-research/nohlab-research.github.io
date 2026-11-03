@@ -11,7 +11,7 @@
 
   let PUBS = null;
   function loadPubs() {
-    if (!PUBS) PUBS = fetch("data/publications.json").then((r) => r.json()).then((d) => d.map((p, i) => ({ ...p, _i: i })).sort((x, y) => y.y - x.y || x._i - y._i));
+    if (!PUBS) PUBS = fetch("data/publications.json", { cache: "no-cache" }).then((r) => r.json()).then((d) => d.map((p, i) => ({ ...p, _i: i })).sort((x, y) => y.y - x.y || x._i - y._i));
     return PUBS;
   }
 
@@ -28,7 +28,7 @@
 
   let NEWS = null;
   function loadNews() {
-    if (!NEWS) NEWS = fetch("data/news.json").then((r) => r.json()).then((d) => d.map((p, i) => ({ ...p, _i: i })).sort((x, y) => String(y.date).localeCompare(String(x.date)) || x._i - y._i));
+    if (!NEWS) NEWS = fetch("data/news.json", { cache: "no-cache" }).then((r) => r.json()).then((d) => d.map((p, i) => ({ ...p, _i: i })).sort((x, y) => String(y.date).localeCompare(String(x.date)) || x._i - y._i));
     return NEWS;
   }
 

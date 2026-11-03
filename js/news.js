@@ -31,7 +31,7 @@
 
   function load() {
     if (!NEWS) {
-      NEWS = fetch("data/news.json")
+      NEWS = fetch("data/news.json", { cache: "no-cache" })
         .then((r) => r.json())
         .then((d) => d.map((p, i) => ({ ...p, _i: i })).sort((a, b) => String(b.date).localeCompare(String(a.date)) || a._i - b._i));
     }
