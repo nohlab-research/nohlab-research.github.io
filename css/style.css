@@ -4,6 +4,7 @@
 :root {
   --primary-color: #059669;
   --primary-light: #10b981;
+  --primary-dark: #047857;  /* 구성원 페이지 직함·연도·과정 표기 */
   --bg-color: #f8fafc;
   --card-bg: #ffffff;
   --text-main: #0f172a;
@@ -187,7 +188,7 @@ a.pub-title:hover { color: var(--primary-color); text-decoration: underline; }
 .pi-ic-scholar { color: #4285F4; }
 .pi-header { margin-bottom: 16px; }
 .pi-name { font-size: 1.6rem; font-weight: 800; margin-bottom: 4px; }
-.pi-title { color: var(--primary-color); font-weight: 700; font-size: 1rem; }
+.pi-title { color: var(--primary-dark); font-weight: 700; font-size: 1rem; }
 .pi-section-title { font-weight: 700; font-size: 1rem; margin: 16px 0 6px 0; color: var(--text-main); }
 .pi-title { display: block; }
 .pi-affil { display: block; margin-top: 4px; color: #475569; font-weight: 700; font-size: 0.92rem; }
@@ -196,7 +197,7 @@ a.pub-title:hover { color: var(--primary-color); text-decoration: underline; }
 .pi-chips { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 14px; }
 .pi-chips span { background: #f1f5f9; border: 1px solid var(--border-color); border-radius: 999px; padding: 6px 14px; font-size: 0.88rem; font-weight: 500; color: #334155; }
 .tl-row { display: grid; grid-template-columns: 138px minmax(0, 1fr); gap: 16px; padding: 13px 0; border-bottom: 1px solid var(--border-color); }
-.tl-year { color: var(--primary-color); font-weight: 700; font-size: 0.85rem; white-space: nowrap; padding-top: 2px; }
+.tl-year { color: var(--primary-dark); font-weight: 700; font-size: 0.85rem; white-space: nowrap; padding-top: 2px; }
 .tl-title { font-weight: 600; color: var(--text-main); font-size: 0.95rem; line-height: 1.5; }
 .tl-sub { color: var(--text-muted); font-size: 0.86rem; margin-top: 3px; line-height: 1.5; }
 .tl-one { padding: 10px 0; }
@@ -206,7 +207,7 @@ a.pub-title:hover { color: var(--primary-color); text-decoration: underline; }
 .pi-more summary::-webkit-details-marker { display: none; }
 .pi-more summary::after { content: ""; width: 7px; height: 7px; border-right: 2px solid var(--text-muted); border-bottom: 2px solid var(--text-muted); transform: rotate(45deg); margin-left: auto; margin-right: 4px; transition: transform 0.2s; }
 .pi-more[open] summary::after { transform: rotate(-135deg); }
-.pi-more summary:hover { color: var(--primary-color); }
+.pi-more summary:hover { color: var(--primary-dark); }
 .pi-more-count { font-size: 0.75rem; font-weight: 700; color: var(--text-muted); background: #f1f5f9; border-radius: 999px; padding: 1px 8px; }
 .pi-list { list-style: none; color: var(--text-muted); font-size: 0.92rem; }
 .pi-list li { position: relative; padding-left: 14px; margin-bottom: 5px; }
@@ -226,7 +227,7 @@ a.pub-title:hover { color: var(--primary-color); text-decoration: underline; }
 }
 .member-photo img { width: 100%; height: 100%; object-fit: cover; }
 .member-card h4 { font-size: 1.1rem; font-weight: 700; margin-bottom: 4px; }
-.member-card .role { font-size: 0.85rem; color: var(--primary-color); font-weight: 700; }
+.member-card .role { font-size: 0.85rem; color: var(--primary-dark); font-weight: 700; }
 
 /* Home member preview */
 .member-preview-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; }
