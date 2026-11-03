@@ -65,7 +65,7 @@
         <div class="news-body">
           <div class="news-meta">${cat}<span>${esc(p.date)}</span></div>
           <h3>${title}</h3>
-          <p>${esc(pick(p, "body"))}</p>
+          ${pick(p, "body") ? `<p>${esc(pick(p, "body"))}</p>` : ""}
         </div>
       </article>`;
   }

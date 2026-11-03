@@ -1,1 +1,17 @@
-[]
+[
+  {
+    "date": "2026-10-29",
+    "category": "life",
+    "title": "학생연구실 근황: 비포 & 애프터",
+    "title_en": "Our Student Office: Before & After",
+    "body": "2025 여름 vs 2026 여름",
+    "body_en": "Summer 2025 vs Summer 2026",
+    "images": [
+      "images/news/2026-10-student-office/1-after.jpg",
+      "images/news/2026-10-student-office/2-before.jpg",
+      "images/news/2026-10-student-office/3-after.jpg",
+      "images/news/2026-10-student-office/4-before.jpg",
+      "images/news/2026-10-student-office/5-after.jpg"
+    ]
+  }
+]
