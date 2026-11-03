@@ -8,8 +8,8 @@ const translations = {
     // 1. 공통 및 네비게이션 (Common & Navigation)
     // ----------------------------------------------------------------------
     site_title: "Social Pharmacy & Pharmacoepidemiology Lab",
-    site_brand_name: "노윤하 교수 Lab",
-    brand_name: "노윤하 교수 Lab",
+    site_brand_name: "Noh Lab",
+    brand_name: "Noh Lab",
     brand_affil: "전남대학교 약학대학",
     nav_home: "Home",
     nav_research: "Research",
@@ -53,7 +53,7 @@ const translations = {
     // ----------------------------------------------------------------------
     // 3. 구성원 페이지 (Members Page)
     // ----------------------------------------------------------------------
-    mem_site_title: "Members - Noh Lab",
+    mem_site_title: "Members | Noh Lab",
     mem_page_title: "Members",
     mem_page_sub: "사회약학 및 약물역학 빅데이터 연구실 연구진 소개입니다.",
     mem_prof_name: "노윤하 교수",
@@ -61,6 +61,16 @@ const translations = {
     pi_name: "노윤하 교수",
     pi_fullname: "노윤하 교수 (Yunha Noh, PharmD, PhD)",
     role_pi: "전남대학교 약학대학 사회약학/약물역학 조교수",
+    pi_position: "조교수",
+    pi_affil: "전남대학교 약학대학",
+    pi_bio: "노윤하 교수는 전남대학교 약학대학 사회약학 조교수입니다. 성균관대학교 약학대학에서 학부(PharmD)와 박사(PhD) 과정을 마쳤고, 성균관대학교와 캐나다 McGill 대학교에서 박사후연구원으로 일했습니다. 국민건강보험 자료 등 보건의료 빅데이터와 인과추론 방법으로 의약품의 실제 효과와 안전성을 평가하고, 그 근거가 의약품 허가와 보건의료 정책에 쓰이도록 하는 연구를 하고 있습니다.",
+    pi_interest_title: "연구 관심 분야",
+    pi_kw1: "약물역학",
+    pi_kw2: "실사용증거(RWE)",
+    pi_kw3: "인과추론",
+    pi_kw4: "약물감시",
+    pi_kw5: "규제과학",
+    pi_kw6: "보건의료 빅데이터",
     pi_profile_label: "연구자 프로필:",
     pi_career_title: "경력 (Career)",
     pi_edu_title: "학력 (Education)",
@@ -93,25 +103,19 @@ const translations = {
     // ----------------------------------------------------------------------
     // 4. 소식 페이지 & 관리자 (News Page & Admin)
     // ----------------------------------------------------------------------
-    news_site_title: "News - Noh Lab",
+    news_site_title: "News | Noh Lab",
     news_page_title: "News & Activity",
-    news_btn_write: "+ 소식 작성하기",
     news_empty: "등록된 소식이 없습니다.",
-    news_btn_delete: "삭제",
-    prompt_delete_pass: "삭제 비밀번호를 입력하세요:",
-    alert_pass_incorrect: "비밀번호가 일치하지 않습니다.",
-    modal_title: "새 소식 등록",
-    modal_ph_title: "제목을 입력하세요",
-    modal_ph_body: "내용을 입력하세요",
-    modal_label_img: "사진 첨부 (선택):",
-    modal_ph_pass: "관리자 비밀번호",
-    modal_btn_submit: "등록하기",
-    modal_btn_cancel: "취소",
+    news_cat_all: "전체",
+    news_cat_award: "수상·장학",
+    news_cat_publication: "논문 게재",
+    news_cat_conference: "학회·발표",
+    news_cat_life: "연구실 생활",
 
     // ----------------------------------------------------------------------
     // 5. 논문 페이지 (Publications Page)
     // ----------------------------------------------------------------------
-    pub_site_title: "Publications - Noh Lab",
+    pub_site_title: "Publications | Noh Lab",
     pub_page_title: "Publications",
     pub_section_desc: "주요 출간 논문 및 연구 성과 목록입니다.",
 
@@ -132,10 +136,10 @@ const translations = {
 
     topic1_full: "만성·희귀질환 약물치료 평가",
     topic1_d: "당뇨병 등 만성질환과 희귀·난치질환, 여러 약을 함께 복용하는 노인에서 신약과 기존 치료의 실제 효과와 안전성을 비교합니다.",
-    topic1_kw1: "당뇨병 신약(GLP-1 수용체 작용제·SGLT2 억제제)",
+    topic1_kw1: "당뇨병·비만 신약(GLP-1 수용체 작용제 등)",
     topic1_kw2: "희귀·난치질환(중증근무력증 등)",
     topic1_kw3: "노인 다제약물",
-    topic1_kw4: "비교 효과·안전성",
+    topic1_kw4: "비교효과·안전성 연구",
     topic1_ref1: "GLP-1 수용체 작용제와 위식도역류질환 (Annals of Internal Medicine, 2025)",
     topic1_ref2: "중증근무력증 사망률 코호트 (Pharmacoepidemiology and Risk Management, 2025)",
 
@@ -161,7 +165,7 @@ const translations = {
     topic3_full: "인과추론·데이터 융합 방법론",
     topic3_d: "Target trial emulation, 시간 관련 비뚤림 보정, AI와 다중오믹스 연계로 관찰 자료에서 믿을 수 있는 인과 근거를 만드는 방법을 개발·검증합니다.",
     topic3_kw1: "Target trial emulation",
-    topic3_kw2: "Time-related bias(시간 관련 비뚤림)",
+    topic3_kw2: "Time-related bias",
     topic3_kw3: "AI 기반 약물감시",
     topic3_kw4: "다중오믹스·데이터 연계",
     topic3_ref1: "측정 불가 시간 비뚤림 보정 검증 (International Journal of Epidemiology, 2023)",
@@ -173,7 +177,7 @@ const translations = {
 
     topic4_full: "규제과학·보건의료정책",
     topic4_d: "실사용 근거의 허가·급여 활용, 의약품 정보와 제도, 보건사업의 효과를 평가해 근거 기반 보건의료 정책 수립을 지원합니다.",
-    topic4_kw1: "실사용 근거의 규제 활용",
+    topic4_kw1: "실사용데이터·실사용증거(RWD·RWE)의 규제 활용",
     topic4_kw2: "의약품 허가·라벨",
     topic4_kw3: "급여·접근성",
     topic4_kw4: "보건의료정책·제도",
@@ -183,7 +187,7 @@ const translations = {
     // ----------------------------------------------------------------------
     // 7. 연락처 페이지 (Contact Page)
     // ----------------------------------------------------------------------
-    contact_site_title: "Contact - Noh Lab",
+    contact_site_title: "Contact | Noh Lab",
     contact_title: "Location & Contact",
     contact_sub: "연구실 위치 및 연락처 정보입니다.",
     contact_office: "연구실 위치",
@@ -198,8 +202,8 @@ const translations = {
     // 1. Common & Navigation
     // ----------------------------------------------------------------------
     site_title: "Social Pharmacy & Pharmacoepidemiology Lab",
-    site_brand_name: "Prof. Yunha Noh Lab",
-    brand_name: "Prof. Yunha Noh Lab",
+    site_brand_name: "Noh Lab",
+    brand_name: "Noh Lab",
     brand_affil: "Chonnam National University College of Pharmacy",
     nav_home: "Home",
     nav_research: "Research",
@@ -243,7 +247,7 @@ const translations = {
     // ----------------------------------------------------------------------
     // 3. Members Page
     // ----------------------------------------------------------------------
-    mem_site_title: "Members - Noh Lab",
+    mem_site_title: "Members | Noh Lab",
     mem_page_title: "Members",
     mem_page_sub: "Meet the team of Social Pharmacy & Pharmacoepidemiology Lab.",
     mem_prof_name: "Prof. Yunha Noh",
@@ -251,6 +255,16 @@ const translations = {
     pi_name: "Prof. Yunha Noh",
     pi_fullname: "Prof. Yunha Noh, PharmD, PhD",
     role_pi: "Assistant Professor, College of Pharmacy, Chonnam National University",
+    pi_position: "Assistant Professor",
+    pi_affil: "College of Pharmacy · Chonnam National University",
+    pi_bio: "Yunha Noh is an Assistant Professor of Social Pharmacy at the College of Pharmacy, Chonnam National University. She received her PharmD and PhD from the School of Pharmacy, Sungkyunkwan University, and worked as a postdoctoral fellow at Sungkyunkwan University and McGill University in Canada. Her research uses large-scale health data, such as Korea's National Health Insurance claims, and causal inference methods to evaluate the real-world effectiveness and safety of medicines, and to support the use of that evidence in drug approval and health policy.",
+    pi_interest_title: "Research Interests",
+    pi_kw1: "Pharmacoepidemiology",
+    pi_kw2: "Real-world evidence (RWE)",
+    pi_kw3: "Causal inference",
+    pi_kw4: "Pharmacovigilance",
+    pi_kw5: "Regulatory science",
+    pi_kw6: "Health big data",
     pi_profile_label: "Researcher Profiles:",
     pi_career_title: "Career",
     pi_edu_title: "Education",
@@ -283,25 +297,19 @@ const translations = {
     // ----------------------------------------------------------------------
     // 4. News Page & Admin
     // ----------------------------------------------------------------------
-    news_site_title: "News - Noh Lab",
+    news_site_title: "News | Noh Lab",
     news_page_title: "News & Activity",
-    news_btn_write: "+ Write Post",
-    news_empty: "No news registered.",
-    news_btn_delete: "Delete",
-    prompt_delete_pass: "Enter deletion password:",
-    alert_pass_incorrect: "Password does not match.",
-    modal_title: "Post New Update",
-    modal_ph_title: "Enter title",
-    modal_ph_body: "Enter content",
-    modal_label_img: "Attach Image (Optional):",
-    modal_ph_pass: "Admin Password",
-    modal_btn_submit: "Submit",
-    modal_btn_cancel: "Cancel",
+    news_empty: "No news yet.",
+    news_cat_all: "All",
+    news_cat_award: "Awards",
+    news_cat_publication: "Publications",
+    news_cat_conference: "Conferences",
+    news_cat_life: "Lab Life",
 
     // ----------------------------------------------------------------------
     // 5. Publications Page
     // ----------------------------------------------------------------------
-    pub_site_title: "Publications - Noh Lab",
+    pub_site_title: "Publications | Noh Lab",
     pub_page_title: "Publications",
     pub_section_desc: "Selected publications and research accomplishments.",
 
@@ -322,10 +330,10 @@ const translations = {
 
     topic1_full: "Chronic & Rare Disease Therapeutics",
     topic1_d: "We compare the real-world effectiveness and safety of new and existing treatments in chronic diseases such as diabetes, rare and intractable diseases, and older adults taking multiple medications.",
-    topic1_kw1: "New diabetes drugs (GLP-1 RAs, SGLT2 inhibitors)",
+    topic1_kw1: "New diabetes & obesity drugs (e.g., GLP-1 receptor agonists)",
     topic1_kw2: "Rare & intractable diseases (e.g., myasthenia gravis)",
     topic1_kw3: "Polypharmacy in older adults",
-    topic1_kw4: "Comparative effectiveness & safety",
+    topic1_kw4: "Comparative effectiveness & safety research",
     topic1_ref1: "GLP-1 receptor agonists and gastroesophageal reflux disease (Annals of Internal Medicine, 2025)",
     topic1_ref2: "Mortality in uncontrolled myasthenia gravis: a population-based cohort (Pharmacoepidemiology and Risk Management, 2025)",
 
@@ -363,7 +371,7 @@ const translations = {
 
     topic4_full: "Regulatory Science & Health Policy",
     topic4_d: "We evaluate the use of real-world evidence in approval and reimbursement, drug information and systems, and the effects of health programs to support evidence-based health policy.",
-    topic4_kw1: "Regulatory use of real-world evidence",
+    topic4_kw1: "Regulatory use of real-world data & evidence (RWD·RWE)",
     topic4_kw2: "Drug approval & labeling",
     topic4_kw3: "Reimbursement & access",
     topic4_kw4: "Health policy & systems",
@@ -373,7 +381,7 @@ const translations = {
     // ----------------------------------------------------------------------
     // 7. Contact Page
     // ----------------------------------------------------------------------
-    contact_site_title: "Contact - Noh Lab",
+    contact_site_title: "Contact | Noh Lab",
     contact_title: "Location & Contact",
     contact_sub: "Location and contact details for the laboratory.",
     contact_office: "Laboratory Location",
