@@ -189,6 +189,25 @@ a.pub-title:hover { color: var(--primary-color); text-decoration: underline; }
 .pi-name { font-size: 1.6rem; font-weight: 800; margin-bottom: 4px; }
 .pi-title { color: var(--primary-color); font-weight: 700; font-size: 1rem; }
 .pi-section-title { font-weight: 700; font-size: 1rem; margin: 16px 0 6px 0; color: var(--text-main); }
+.pi-title { display: block; }
+.pi-affil { display: block; margin-top: 4px; color: #475569; font-weight: 700; font-size: 0.92rem; }
+.pi-bio { color: #475569; font-size: 0.95rem; line-height: 1.75; margin: 4px 0 4px; }
+.pi-info > .pi-section-title { margin: 26px 0 0; padding-bottom: 10px; border-bottom: 1px solid #cbd5e1; font-size: 0.95rem; }
+.pi-chips { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 14px; }
+.pi-chips span { background: #f1f5f9; border: 1px solid var(--border-color); border-radius: 999px; padding: 6px 14px; font-size: 0.88rem; font-weight: 500; color: #334155; }
+.tl-row { display: grid; grid-template-columns: 138px minmax(0, 1fr); gap: 16px; padding: 13px 0; border-bottom: 1px solid var(--border-color); }
+.tl-year { color: var(--primary-color); font-weight: 700; font-size: 0.85rem; white-space: nowrap; padding-top: 2px; }
+.tl-title { font-weight: 600; color: var(--text-main); font-size: 0.95rem; line-height: 1.5; }
+.tl-sub { color: var(--text-muted); font-size: 0.86rem; margin-top: 3px; line-height: 1.5; }
+.tl-one { padding: 10px 0; }
+.tl-one .tl-title { font-weight: 500; }
+.pi-more { margin-top: 26px; }
+.pi-more summary { list-style: none; cursor: pointer; font-weight: 800; font-size: 0.95rem; color: var(--text-main); padding-bottom: 10px; border-bottom: 1px solid #cbd5e1; display: flex; align-items: center; gap: 8px; }
+.pi-more summary::-webkit-details-marker { display: none; }
+.pi-more summary::after { content: ""; width: 7px; height: 7px; border-right: 2px solid var(--text-muted); border-bottom: 2px solid var(--text-muted); transform: rotate(45deg); margin-left: auto; margin-right: 4px; transition: transform 0.2s; }
+.pi-more[open] summary::after { transform: rotate(-135deg); }
+.pi-more summary:hover { color: var(--primary-color); }
+.pi-more-count { font-size: 0.75rem; font-weight: 700; color: var(--text-muted); background: #f1f5f9; border-radius: 999px; padding: 1px 8px; }
 .pi-list { list-style: none; color: var(--text-muted); font-size: 0.92rem; }
 .pi-list li { position: relative; padding-left: 14px; margin-bottom: 5px; }
 .pi-list li::before { content: "•"; position: absolute; left: 0; color: var(--primary-color); font-weight: bold; }
@@ -283,6 +302,7 @@ a.pub-title:hover { color: var(--primary-color); text-decoration: underline; }
 
   .pi-card { grid-template-columns: minmax(0, 1fr); padding: 24px; gap: 24px; }
   .pi-photo { max-width: 200px; height: 250px; }
+  .tl-row { grid-template-columns: minmax(0, 1fr); gap: 2px; }
   .member-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
 
