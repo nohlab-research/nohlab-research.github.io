@@ -117,6 +117,7 @@ const translations = {
     // 5. 논문 페이지 (Publications Page)
     // ----------------------------------------------------------------------
     pub_site_title: "Publications | Noh Lab",
+    pub_rep_title: "대표 논문",
     pub_page_title: "Publications",
     pub_section_desc: "주요 출간 논문 및 연구 성과 목록입니다.",
 
@@ -312,6 +313,7 @@ const translations = {
     // 5. Publications Page
     // ----------------------------------------------------------------------
     pub_site_title: "Publications | Noh Lab",
+    pub_rep_title: "Selected Publications",
     pub_page_title: "Publications",
     pub_section_desc: "Selected publications and research accomplishments.",
 
