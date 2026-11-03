@@ -175,15 +175,16 @@ a.pub-title:hover { color: var(--primary-color); text-decoration: underline; }
 .pi-contact-label { display: block; font-size: 0.75rem; font-weight: 800; letter-spacing: 0.5px; text-transform: uppercase; color: var(--primary-color); margin-bottom: 3px; }
 .pi-contact a { color: var(--text-main); font-weight: 600; word-break: break-word; }
 .pi-contact a:hover { color: var(--primary-color); text-decoration: underline; }
-.pi-links { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 6px; }
-.pi-link { width: 42px; height: 42px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; color: #fff; transition: transform 0.2s, box-shadow 0.2s; }
-.pi-link svg { width: 22px; height: 22px; display: block; }
-.pi-contact a.pi-link, .pi-contact a.pi-link:hover { color: #fff; text-decoration: none; }
-.pi-link:hover { transform: translateY(-2px); box-shadow: 0 4px 12px rgba(15,23,42,0.18); }
-.pi-link:focus-visible { outline: 3px solid var(--text-main); outline-offset: 2px; }
-.pi-link-email { background: var(--primary-color); }
-.pi-link-orcid { background: #A6CE39; }
-.pi-link-scholar { background: #4285F4; }
+.pi-contact.pi-contact-list { gap: 0; }
+.pi-contact-list li { border-bottom: 1px solid var(--border-color); }
+.pi-contact-list li:first-child { border-top: 1px solid var(--border-color); }
+.pi-contact-list a { display: flex; align-items: center; gap: 10px; padding: 10px 2px; font-weight: 500; }
+.pi-contact-list a:hover { text-decoration: none; }
+.pi-ic { display: inline-flex; width: 16px; height: 16px; flex-shrink: 0; }
+.pi-ic svg { width: 100%; height: 100%; display: block; }
+.pi-ic-email { color: var(--text-muted); }
+.pi-ic-orcid { color: #A6CE39; }
+.pi-ic-scholar { color: #4285F4; }
 .pi-header { margin-bottom: 16px; }
 .pi-name { font-size: 1.6rem; font-weight: 800; margin-bottom: 4px; }
 .pi-title { color: var(--primary-color); font-weight: 700; font-size: 1rem; }
