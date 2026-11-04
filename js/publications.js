@@ -26,6 +26,19 @@
         html.push(`<li class="pub-item"><span class="pub-number">${p.n}</span><div class="pub-details"><span class="pub-title">${esc(p.t)}</span><p class="pub-authors">${authors(p.a)}</p><p class="pub-journal"><em>${esc(p.j)}</em></p>${link}</div></li>`);
       });
       list.innerHTML = html.join("");
+
+      // 대표 논문 (rep: true) — 전체 목록과 같은 모양, 번호 대신 연도와 영향력지수 표시
+      const reps = items.filter((p) => p.rep);
+      const repBox = document.getElementById("pub-rep");
+      if (repBox && reps.length) {
+        document.getElementById("pub-rep-list").innerHTML = reps.map((p) => {
+          const link = p.u ? `<a class="pub-link" href="${esc(p.u)}" ${ext}>${/doi\.org/.test(p.u) ? "DOI" : "Link"} ↗</a>` : "";
+          const badge = p.if ? ` <span class="pub-if">IF ${esc(p.if)}</span>` : "";
+          return `<li class="pub-item"><span class="pub-number pub-number-year">${p.y}</span><div class="pub-details"><span class="pub-title">${esc(p.t)}</span><p class="pub-authors">${authors(p.a)}</p><p class="pub-journal"><em>${esc(p.j)}</em>${badge}</p>${link}</div></li>`;
+        }).join("");
+        document.getElementById("pub-rep-count").textContent = reps.length;
+        repBox.hidden = false;
+      }
       const total = document.getElementById("pub-total-count");
       if (total) total.textContent = items.length;
     }).catch(() => {

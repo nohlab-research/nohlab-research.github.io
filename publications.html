@@ -4,6 +4,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title data-i18n="pub_site_title">Publications | Noh Lab</title>
+  <meta name="description" content="전남대학교 약학대학 사회약학연구실(노윤하 교수)">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Noh Lab">
+  <meta property="og:title" content="Publications | Noh Lab">
+  <meta property="og:description" content="전남대학교 약학대학 사회약학연구실(노윤하 교수)">
+  <meta property="og:url" content="https://nohlab-research.github.io/publications">
+  <meta property="og:image" content="https://nohlab-research.github.io/images/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
   <link rel="icon" type="image/png" href="images/logo.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -36,7 +46,12 @@
 
   <main class="container section">
     <h1 class="page-title" data-i18n="pub_page_title">Publications</h1>
-    <p class="pub-total"><span data-i18n="pub_total_label">전체 논문</span> <strong id="pub-total-count">0</strong></p>
+    <!-- 대표 논문: data/publications.json 에서 "rep": true 와 "if": "영향력지수" 를 붙인 논문이 여기에 표시됩니다 -->
+    <details class="pub-rep" id="pub-rep" open hidden>
+      <summary class="pub-sec-title"><span data-i18n="pub_rep_title">대표 논문</span><span class="pub-sec-count" id="pub-rep-count"></span></summary>
+      <ul class="pub-list" id="pub-rep-list"></ul>
+    </details>
+    <h2 class="pub-sec-title pub-sec-all"><span data-i18n="pub_total_label">전체 논문</span><span class="pub-sec-count" id="pub-total-count">0</span></h2>
     <ul class="pub-list" id="pub-list"></ul>
     <noscript><p>JavaScript를 활성화하면 논문 목록이 표시됩니다.</p></noscript>
   </main>
