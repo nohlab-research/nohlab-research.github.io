@@ -146,8 +146,13 @@ a { color: inherit; text-decoration: none; }
 .pub-number-year { font-size: 0.8rem; }
 .pub-if { display: inline-block; font-style: normal; font-size: 0.75rem; font-weight: 700; color: var(--primary-dark); background: #ecfdf5; border-radius: 4px; padding: 1px 7px; margin-left: 4px; }
 .pub-list { list-style: none; display: flex; flex-direction: column; gap: 12px; }
-.pub-year-heading { margin-top: 28px; }
-.pub-year-heading:first-child { margin-top: 0; }
+.pub-year-block { margin-top: 16px; }
+.pub-year-block:first-child { margin-top: 0; }
+.pub-year-group > summary { list-style: none; cursor: pointer; margin-bottom: 12px; }
+.pub-year-group > summary::-webkit-details-marker { display: none; }
+.pub-year-group > summary h2::after { content: ""; width: 8px; height: 8px; border-right: 2px solid var(--text-muted); border-bottom: 2px solid var(--text-muted); transform: rotate(-135deg); margin-left: auto; margin-right: 6px; transition: transform 0.2s; }
+.pub-year-group:not([open]) > summary h2::after { transform: rotate(45deg); }
+.pub-year-group:not([open]) > summary { margin-bottom: 0; }
 .pub-year-heading h2 {
   display: flex; align-items: center; gap: 12px; font-size: 1.6rem; font-weight: 800;
   padding-bottom: 8px; border-bottom: 2px solid var(--primary-color);
