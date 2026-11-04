@@ -11,7 +11,7 @@
 
   let PUBS = null;
   function loadPubs() {
-    if (!PUBS) PUBS = fetch("data/publications.json", { cache: "no-cache" }).then((r) => r.json()).then((d) => d.map((p, i) => ({ ...p, _i: i })).sort((x, y) => y.y - x.y || x._i - y._i));
+    if (!PUBS) PUBS = fetch("data/publications.json", { cache: "no-cache" }).then((r) => r.json()).then((d) => d.map((p, i) => ({ ...p, _i: i })).sort((x, y) => String(y.d || y.y).localeCompare(String(x.d || x.y)) || x._i - y._i));
     return PUBS;
   }
 
