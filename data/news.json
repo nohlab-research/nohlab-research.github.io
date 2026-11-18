@@ -13,5 +13,71 @@
       "images/news/2026-10-student-office/4-before.jpg",
       "images/news/2026-10-student-office/5-after.jpg"
     ]
+  },
+  {
+    "date": "2026-06-12",
+    "category": "award",
+    "title": "노윤하 교수, 한국사회약학회 신진사회약학자상 수상",
+    "title_en": "Prof. Yunha Noh receives the Young Investigator Award in Social Pharmacy",
+    "body": "2026년 한국사회약학회 전기학술대회(6월 12일, 서울대학교 치과병원)에서 노윤하 교수가 신진사회약학자상을 수상했습니다.",
+    "body_en": "Prof. Yunha Noh received the Young Investigator Award in Social Pharmacy at the 2026 Spring Conference of the Korean Academy of Social and Administrative Pharmacy (June 12, 2026).",
+    "images": [
+      "images/news/2026-06-kasap-award/4.jpg",
+      "images/news/2026-06-kasap-award/3.jpg",
+      "images/news/2026-06-kasap-award/2.jpg",
+      "images/news/2026-06-kasap-award/1.jpg"
+    ]
+  },
+  {
+    "date": "2026-02-17",
+    "category": "publication",
+    "title": "GLP-1 수용체 작용제와 시신경병증(NAION) 위험 연구, Diabetes Care 게재",
+    "title_en": "GLP-1 receptor agonists and risk of NAION, published in Diabetes Care",
+    "body": "제2형 당뇨병 환자에서 GLP-1 수용체 작용제를 시작한 경우, DPP-4 억제제보다 첫 1년 동안 비동맥염성 전방 허혈성 시신경병증(NAION) 위험이 2.56배 높았습니다.",
+    "body_en": "In patients with type 2 diabetes, initiating a GLP-1 receptor agonist was associated with a 2.56-fold higher risk of NAION in the first year compared with DPP-4 inhibitors.",
+    "images": [
+      "images/news/2026-02-naion-diabetes-care/1.jpg"
+    ],
+    "image_fit": "contain",
+    "links": [
+      {
+        "type": "press",
+        "source": "오마이뉴스",
+        "title": "당뇨·비만 치료제, 드물게 시력 저하 위험 높여",
+        "url": "https://www.ohmynews.com/NWS_Web/View/at_pg.aspx?CNTN_CD=A0003209841"
+      },
+      {
+        "type": "paper",
+        "source": "Diabetes Care",
+        "title": "Glucagon-Like Peptide 1 Receptor Agonists and Risk of Nonarteritic Anterior Ischemic Optic Neuropathy in Patients With Type 2 Diabetes",
+        "url": "https://doi.org/10.2337/dc25-2577"
+      }
+    ]
+  },
+  {
+    "date": "2025-07-15",
+    "category": "publication",
+    "title": "GLP-1 수용체 작용제와 위식도역류질환(GERD) 위험 연구, Annals of Internal Medicine 게재",
+    "title_en": "GLP-1 receptor agonists and risk of GERD, published in Annals of Internal Medicine",
+    "body": "GLP-1 수용체 작용제 사용자는 SGLT-2 억제제 사용자보다 3년 내 위식도역류질환 위험이 27% 높았고, 바렛식도 등 합병증 위험도 55% 높았습니다.",
+    "body_en": "Users of GLP-1 receptor agonists had a 27% higher risk of GERD within 3 years than SGLT-2 inhibitor users, and a 55% higher risk of complications such as Barrett's esophagus.",
+    "images": [
+      "images/news/2025-07-gerd-annals/1.jpg"
+    ],
+    "image_fit": "contain",
+    "links": [
+      {
+        "type": "press",
+        "source": "의학신문",
+        "title": "전남대 연구팀, GLP-1 치료제 GERD 위험 27%↑",
+        "url": "https://www.bosa.co.kr/news/articleView.html?idxno=2253728"
+      },
+      {
+        "type": "paper",
+        "source": "Annals of Internal Medicine",
+        "title": "Glucagon-Like Peptide-1 Receptor Agonists and Risk for Gastroesophageal Reflux Disease in Patients With Type 2 Diabetes",
+        "url": "https://doi.org/10.7326/ANNALS-24-03420"
+      }
+    ]
   }
 ]

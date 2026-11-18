@@ -10,7 +10,12 @@
      "title_en": "Title in English",
      "body": "내용",
      "body_en": "Content in English",
-     "images": ["images/news/2026-11-conference/1.jpg", "images/news/2026-11-conference/2.jpg"]
+     "images": ["images/news/2026-11-conference/1.jpg", "images/news/2026-11-conference/2.jpg"],
+     "image_fit": "contain",            (선택) 그림·도표처럼 잘리면 안 되는 사진일 때
+     "links": [                         (선택) 기사·논문 바로가기 카드
+       {"type": "press", "source": "오마이뉴스", "title": "기사 제목", "url": "https://..."},
+       {"type": "paper", "source": "Diabetes Care", "title": "논문 제목", "url": "https://doi.org/..."}
+     ]
    }
 
    category 는 아래 네 가지 중 하나:
@@ -53,7 +58,12 @@
   function card(p) {
     const imgs = Array.isArray(p.images) ? p.images.filter(Boolean) : [];
     const title = esc(pick(p, "title"));
-    const cover = imgs.length ? `<img src="${esc(imgs[0])}" class="news-img" alt="${title}" loading="lazy">` : "";
+    const fit = p.image_fit === "contain" ? " news-img-contain" : "";
+    const cover = imgs.length ? `<img src="${esc(imgs[0])}" class="news-img${fit}" alt="${title}" loading="lazy">` : "";
+    const links = Array.isArray(p.links) ? p.links.filter((l) => l && l.url).map((l) => {
+      const kind = l.type === "paper" ? tr("news_link_paper") : tr("news_link_press");
+      return `<a class="news-link news-link-${l.type === "paper" ? "paper" : "press"}" href="${esc(l.url)}" target="_blank" rel="noopener noreferrer"><span class="news-link-src">${esc(kind)}${l.source ? " · " + esc(l.source) : ""}</span><span class="news-link-title">${esc(l.title || l.url)}</span><span class="news-link-arrow" aria-hidden="true">↗</span></a>`;
+    }).join("") : "";
     const thumbs = imgs.length > 1
       ? `<div class="news-thumbs">${imgs.map((src, i) => `<button type="button" class="news-thumb${i === 0 ? " active" : ""}" data-src="${esc(src)}" aria-label="${i + 1}"><img src="${esc(src)}" alt="" loading="lazy"></button>`).join("")}</div>`
       : "";
@@ -66,6 +76,7 @@
           <div class="news-meta">${cat}<span>${esc(p.date)}</span></div>
           <h3>${title}</h3>
           ${pick(p, "body") ? `<p>${esc(pick(p, "body"))}</p>` : ""}
+          ${links ? `<div class="news-links">${links}</div>` : ""}
         </div>
       </article>`;
   }
