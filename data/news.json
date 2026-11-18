@@ -91,6 +91,18 @@
     ]
   },
   {
+    "date": "2026-06-05",
+    "category": "conference",
+    "title": "2026 KFDC 규제과학회 춘계학술대회",
+    "title_en": "2026 KFDC Regulatory Science Society Spring Conference",
+    "body": "신기술·신개념 의약품 임상시험 가이드라인 개발 로드맵 발표",
+    "body_en": "Presented a roadmap for developing clinical trial guidelines for novel-technology and novel-concept medicines",
+    "images": [
+      "images/news/2026-06-kfdc-spring/1.jpg"
+    ],
+    "image_fit": "contain"
+  },
+  {
     "date": "2026-02-17",
     "category": "publication",
     "title": "당뇨·비만 치료제, 드물게 시력 저하 위험 높여",
