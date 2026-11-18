@@ -45,7 +45,7 @@
 }
 ```
 
-- `category` 는 `award`(수상·장학), `publication`(논문 게재), `conference`(학회·발표), `life`(연구실 생활) 중 하나입니다.
+- `category` 는 `award`(수상·선정: 수상, 장학, 연구과제 선정), `publication`(논문 게재), `conference`(학회·발표), `life`(연구실 생활) 중 하나입니다.
 - `title_en`, `body_en`, `images` 는 없어도 됩니다. 영문이 없으면 영문 화면에서도 한국어가 보입니다.
 - 날짜 순서는 자동으로 정렬되며, 홈의 '최근 소식'에도 자동으로 나옵니다.
 

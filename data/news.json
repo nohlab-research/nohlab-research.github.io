@@ -7,10 +7,11 @@
     "body": "🙌",
     "body_en": "🙌",
     "images": [
-      "images/news/2026-09-semester-dinner/1.jpg",
       "images/news/2026-09-semester-dinner/2.jpg",
-      "images/news/2026-09-semester-dinner/3.mp4"
-    ]
+      "images/news/2026-09-semester-dinner/3.mp4",
+      "images/news/2026-09-semester-dinner/1.jpg"
+    ],
+    "image_fit": "contain"
   },
   {
     "date": "2026-09-01",
@@ -119,7 +120,8 @@
     "images": [
       "images/news/2026-02-kpa-gwangju/1.jpg",
       "images/news/2026-02-kpa-gwangju/2.jpg"
-    ]
+    ],
+    "image_fit": "contain"
   },
   {
     "date": "2026-01-14",

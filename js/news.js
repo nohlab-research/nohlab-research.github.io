@@ -21,7 +21,7 @@
    }
 
    category 는 아래 네 가지 중 하나:
-     award       = 수상·장학
+     award       = 수상·선정 (수상, 장학, 연구과제 선정)
      publication = 논문 게재
      conference  = 학회·발표
      life        = 연구실 생활
@@ -60,7 +60,7 @@
   const isVid = (src) => /\.(mp4|webm)$/i.test(src);
   const poster = (src) => src.replace(/\.(mp4|webm)$/i, "-poster.jpg");
   const media = (src, fit, alt) => isVid(src)
-    ? `<video src="${esc(src)}" poster="${esc(poster(src))}" class="news-img news-video" controls muted playsinline loop preload="none"></video>`
+    ? `<video src="${esc(src)}" poster="${esc(poster(src))}" class="news-img news-video" autoplay muted playsinline loop preload="metadata"></video>`
     : `<img src="${esc(src)}" class="news-img${fit || ""}" alt="${alt || ""}" loading="lazy">`;
 
   function card(p) {
