@@ -17,9 +17,18 @@
   {
     "date": "2026-08-03",
     "category": "publication",
-    "title": "천식 임신부, 임신 초기 흡입 스테로이드 계속 써도 임신 결과 차이 없어",
+    "title": "임신 초기 흡입 스테로이드 유지, 산모·신생아 위험 증가와 연관 없어",
     "body": "JAMA Netw Open 게재",
+    "images": [
+      "images/news/2026-08-ics-pregnancy/1.jpg",
+      "images/news/2026-08-ics-pregnancy/2.jpg"
+    ],
+    "image_fit": "contain",
     "links": [
+      {
+        "type": "press",
+        "url": "https://www.healio.com/news/allergy-asthma/20260903/continued-ics-use-in-early-pregnancy-higher-risks-for-adverse-outcomes-not-linked"
+      },
       {
         "type": "paper",
         "url": "https://doi.org/10.1001/jamanetworkopen.2026.30781"
@@ -69,7 +78,11 @@
     "date": "2026-01-14",
     "category": "publication",
     "title": "Gut 학술지 논문 출판",
-    "body": "소아 위산 억제제–염증성 장질환 연관성 확인\nPPI 처방 소아청소년서 위험비 1.37 관찰… 명확한 적응증 없을 때 더 높아",
+    "body": "소아 위산 억제제–염증성 장질환 연관성 확인\n명확한 적응증 없는 처방에서 위험 증가 관찰",
+    "images": [
+      "images/news/2026-01-gut-ibd/1.jpg"
+    ],
+    "image_fit": "contain",
     "links": [
       {
         "type": "press",
