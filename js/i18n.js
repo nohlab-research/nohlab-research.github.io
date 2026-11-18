@@ -45,7 +45,7 @@ const translations = {
     home_pub_sub: "JAMA, Gut, Diabetes Care 등 저명 학술지에 게재된 최신 연구 성과입니다.",
     home_member_tag: "Members",
     home_member_title: "연구실 구성원",
-    home_member_sub: "함께 연구를 이끌어가는 연구실 구성원을 소개합니다.",
+    home_member_sub: "연구를 함께 이끌어가는 사람들을 소개합니다.",
     home_news_tag: "News",
     home_news_title: "최근 소식",
     home_news_sub: "연구실의 학회 발표, 논문 게재, 수상 등의 소식을 확인하세요.",
