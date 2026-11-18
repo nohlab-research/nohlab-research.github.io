@@ -11,6 +11,7 @@
      "body": "내용",
      "body_en": "Content in English",
      "images": ["images/news/2026-11-conference/1.jpg", "images/news/2026-11-conference/2.jpg"],
+     (동영상은 .mp4 로 images 목록에 넣고, 같은 이름의 -poster.jpg 를 함께 올림)
      "image_fit": "contain",            (선택) 그림·도표처럼 잘리면 안 되는 사진일 때
      "links": [                         (선택) 본문 아래 작은 바로가기 링크
        {"type": "press", "url": "https://..."}          → "기사 보기 ↗",
@@ -56,16 +57,22 @@
     });
   }
 
+  const isVid = (src) => /\.(mp4|webm)$/i.test(src);
+  const poster = (src) => src.replace(/\.(mp4|webm)$/i, "-poster.jpg");
+  const media = (src, fit, alt) => isVid(src)
+    ? `<video src="${esc(src)}" poster="${esc(poster(src))}" class="news-img news-video" controls muted playsinline loop preload="none"></video>`
+    : `<img src="${esc(src)}" class="news-img${fit || ""}" alt="${alt || ""}" loading="lazy">`;
+
   function card(p) {
     const imgs = Array.isArray(p.images) ? p.images.filter(Boolean) : [];
     const title = esc(pick(p, "title"));
     const fit = p.image_fit === "contain" ? " news-img-contain" : "";
-    const cover = imgs.length ? `<img src="${esc(imgs[0])}" class="news-img${fit}" alt="${title}" loading="lazy">` : "";
+    const cover = imgs.length ? `<div class="news-cover" data-fit="${fit}" data-alt="${title}">${media(imgs[0], fit, title)}</div>` : "";
     const links = Array.isArray(p.links) ? p.links.filter((l) => l && l.url).map((l) =>
       `<a class="news-link" href="${esc(l.url)}" target="_blank" rel="noopener noreferrer"${l.title ? ` title="${esc(l.title)}"` : ""}>${esc((lang() === "en" && l.label_en) || l.label || tr(l.type === "paper" ? "news_link_paper" : "news_link_press"))} ↗</a>`
     ).join("") : "";
     const thumbs = imgs.length > 1
-      ? `<div class="news-thumbs">${imgs.map((src, i) => `<button type="button" class="news-thumb${i === 0 ? " active" : ""}" data-src="${esc(src)}" aria-label="${i + 1}"><img src="${esc(src)}" alt="" loading="lazy"></button>`).join("")}</div>`
+      ? `<div class="news-thumbs">${imgs.map((src, i) => `<button type="button" class="news-thumb${i === 0 ? " active" : ""}${isVid(src) ? " news-thumb-video" : ""}" data-src="${esc(src)}" aria-label="${i + 1}"><img src="${esc(isVid(src) ? poster(src) : src)}" alt="" loading="lazy"></button>`).join("")}</div>`
       : "";
     const cat = CATS.includes(p.category) ? `<span class="news-cat news-cat-${p.category}">${esc(tr("news_cat_" + p.category))}</span>` : "";
     return `
@@ -93,10 +100,10 @@
       }
       box.innerHTML = shown.map(card).join("");
       box.querySelectorAll(".news-card").forEach((el) => {
-        const coverImg = el.querySelector(".news-img");
+        const coverBox = el.querySelector(".news-cover");
         el.querySelectorAll(".news-thumb").forEach((t) => {
           t.addEventListener("click", () => {
-            if (coverImg) coverImg.src = t.dataset.src;
+            if (coverBox) coverBox.innerHTML = media(t.dataset.src, coverBox.dataset.fit, coverBox.dataset.alt);
             el.querySelectorAll(".news-thumb").forEach((x) => x.classList.toggle("active", x === t));
           });
         });

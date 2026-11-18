@@ -1,5 +1,18 @@
 [
   {
+    "date": "2026-09-07",
+    "category": "life",
+    "title": "개강 기념 연구실 회식",
+    "title_en": "Lab dinner to kick off the new semester",
+    "body": "🙌",
+    "body_en": "🙌",
+    "images": [
+      "images/news/2026-09-semester-dinner/1.jpg",
+      "images/news/2026-09-semester-dinner/2.jpg",
+      "images/news/2026-09-semester-dinner/3.mp4"
+    ]
+  },
+  {
     "date": "2026-09-01",
     "category": "award",
     "title": "2026 한국연구재단 미래도전연구지원사업 선정",
@@ -104,9 +117,9 @@
     "body": "감사합니다.",
     "body_en": "Thank you.",
     "images": [
-      "images/news/2026-02-kpa-gwangju/1.jpg"
-    ],
-    "image_fit": "contain"
+      "images/news/2026-02-kpa-gwangju/1.jpg",
+      "images/news/2026-02-kpa-gwangju/2.jpg"
+    ]
   },
   {
     "date": "2026-01-14",

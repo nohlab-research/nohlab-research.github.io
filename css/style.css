@@ -269,6 +269,11 @@ a.pub-title:hover { color: var(--primary-color); text-decoration: underline; }
 .news-filter.active { background: var(--primary-color); border-color: var(--primary-color); color: #fff; }
 .news-filter-count { font-size: 0.75rem; font-weight: 700; opacity: 0.7; }
 .news-cat { display: inline-block; background: #ecfdf5; color: var(--primary-color); font-size: 0.78rem; font-weight: 700; padding: 2px 10px; border-radius: 6px; }
+.news-cover { line-height: 0; }
+.news-cover .news-img { display: block; }
+.news-video { height: auto; max-height: 380px; object-fit: contain; background: #000; display: block; width: 100%; }
+.news-thumb-video { position: relative; }
+.news-thumb-video::after { content: "▶"; position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; color: #fff; font-size: 0.8rem; text-shadow: 0 0 4px rgba(0,0,0,.7); }
 .news-img-contain { object-fit: contain; background: #fff; }
 .news-body p { white-space: pre-line; }
 .news-links { display: flex; flex-wrap: wrap; gap: 4px 16px; margin-top: 10px; }
