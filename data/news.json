@@ -1,11 +1,36 @@
 [
   {
+    "date": "2026-09-07",
+    "category": "life",
+    "title": "개강 기념 연구실 회식",
+    "title_en": "Lab dinner to kick off the new semester",
+    "body": "🙌",
+    "body_en": "🙌",
+    "images": [
+      "images/news/2026-09-semester-dinner/2.jpg",
+      "images/news/2026-09-semester-dinner/3.mp4",
+      "images/news/2026-09-semester-dinner/1.jpg"
+    ],
+    "image_fit": "contain"
+  },
+  {
+    "date": "2026-09-01",
+    "category": "award",
+    "title": "2026 한국연구재단 미래도전연구지원사업 선정",
+    "title_en": "Selected for the 2026 NRF Future Challenge Research Program",
+    "body": "향후 5년간 총 8억 원 지원",
+    "body_en": "KRW 800 million in funding over the next five years",
+    "images": [
+      "images/news/2026-09-nrf-grant/1.jpg"
+    ]
+  },
+  {
     "date": "2026-08-30",
     "category": "life",
     "title": "학생연구실 근황: 비포 & 애프터",
     "title_en": "Our Student Office: Before & After",
-    "body": "2026 여름 vs 2025 여름",
-    "body_en": "Summer 2026 vs Summer 2025",
+    "body": "2026 여름 vs 2025 여름 🌳",
+    "body_en": "Summer 2026 vs Summer 2025 🌳",
     "images": [
       "images/news/2026-10-student-office/1-after.jpg",
       "images/news/2026-10-student-office/2-before.jpg",
@@ -84,6 +109,19 @@
         "url": "https://doi.org/10.2337/dc25-2577"
       }
     ]
+  },
+  {
+    "date": "2026-02-07",
+    "category": "award",
+    "title": "노윤하 교수, 광주광역시약사회 감사패 수상",
+    "title_en": "Prof. Yunha Noh receives a plaque of appreciation from the Gwangju Pharmaceutical Association",
+    "body": "감사합니다.",
+    "body_en": "Thank you.",
+    "images": [
+      "images/news/2026-02-kpa-gwangju/1.jpg",
+      "images/news/2026-02-kpa-gwangju/2.jpg"
+    ],
+    "image_fit": "contain"
   },
   {
     "date": "2026-01-14",
