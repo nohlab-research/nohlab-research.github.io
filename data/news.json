@@ -15,6 +15,27 @@
     ]
   },
   {
+    "date": "2026-08-03",
+    "category": "publication",
+    "title": "임신 초기 흡입 스테로이드 유지, 산모·신생아 위험 증가와 연관 없어",
+    "body": "JAMA Netw Open 게재",
+    "images": [
+      "images/news/2026-08-ics-pregnancy/1.jpg",
+      "images/news/2026-08-ics-pregnancy/2.jpg"
+    ],
+    "image_fit": "contain",
+    "links": [
+      {
+        "type": "press",
+        "url": "https://www.healio.com/news/allergy-asthma/20260903/continued-ics-use-in-early-pregnancy-higher-risks-for-adverse-outcomes-not-linked"
+      },
+      {
+        "type": "paper",
+        "url": "https://doi.org/10.1001/jamanetworkopen.2026.30781"
+      }
+    ]
+  },
+  {
     "date": "2026-06-12",
     "category": "award",
     "title": "노윤하 교수, 신진사회약학자상 수상",
@@ -33,9 +54,10 @@
     "date": "2026-02-17",
     "category": "publication",
     "title": "당뇨·비만 치료제, 드물게 시력 저하 위험 높여",
-    "body": "Diabetes Care 논문 게재",
+    "body": "Diabetes Care 공식 팟캐스트 \"On Air\" 2026년 5월호 소개",
     "images": [
-      "images/news/2026-02-naion-diabetes-care/1.jpg"
+      "images/news/2026-02-naion-diabetes-care/1.jpg",
+      "images/news/2026-02-naion-diabetes-care/2.jpg"
     ],
     "image_fit": "contain",
     "links": [
@@ -46,10 +68,43 @@
         "url": "https://www.ohmynews.com/NWS_Web/View/at_pg.aspx?CNTN_CD=A0003209841"
       },
       {
+        "type": "press",
+        "label": "팟캐스트 듣기",
+        "url": "https://diabetescareonair.libsyn.com/site/naveed-sattar-on-early-large-scale-weight-loss-the-future-of-type-2-diabetes-care-laurent-azoulay-on-glp-1s-the-risk-for-optic-neuropathy-plus-a-classic-edition-of-rapid-exchange"
+      },
+      {
         "type": "paper",
         "source": "Diabetes Care",
         "title": "Glucagon-Like Peptide 1 Receptor Agonists and Risk of Nonarteritic Anterior Ischemic Optic Neuropathy in Patients With Type 2 Diabetes",
         "url": "https://doi.org/10.2337/dc25-2577"
+      }
+    ]
+  },
+  {
+    "date": "2026-01-14",
+    "category": "publication",
+    "title": "Gut 학술지 논문 출판",
+    "body": "소아 위산 억제제–염증성 장질환 연관성 확인\n명확한 적응증 없는 처방에서 위험 증가 관찰",
+    "images": [
+      "images/news/2026-01-gut-ibd/1.jpg",
+      "images/news/2026-01-gut-ibd/2.jpg",
+      "images/news/2026-01-gut-ibd/3.jpg",
+      "images/news/2026-01-gut-ibd/4.jpg"
+    ],
+    "image_fit": "contain",
+    "links": [
+      {
+        "type": "press",
+        "label": "BRIC 보기",
+        "url": "https://www.ibric.org/s.do?wxXmwuvctj"
+      },
+      {
+        "type": "press",
+        "url": "https://www.bosa.co.kr/news/articleView.html?idxno=2267828"
+      },
+      {
+        "type": "paper",
+        "url": "https://doi.org/10.1136/gutjnl-2025-337345"
       }
     ]
   },
@@ -59,7 +114,8 @@
     "title": "전남대 연구팀, GLP-1 치료제 GERD 위험 27%↑",
     "body": "Annals of Internal Medicine 논문 게재",
     "images": [
-      "images/news/2025-07-gerd-annals/1.jpg"
+      "images/news/2025-07-gerd-annals/1.jpg",
+      "images/news/2025-07-gerd-annals/2.jpg"
     ],
     "image_fit": "contain",
     "links": [
