@@ -41,15 +41,15 @@
       const total = document.getElementById("pub-total-count");
       if (total) total.textContent = items.length;
 
-      // 탭 전환: 주소 끝이 #all 이면 전체 논문 탭으로 시작
+      // 탭 전환: 처음에는 전체 논문, 주소 끝이 #rep 이면 대표 논문 탭으로 시작
       const tabs = document.querySelectorAll(".pub-tabs [data-tab]");
       const show = (t) => {
         tabs.forEach((b) => { const on = b.dataset.tab === t; b.classList.toggle("active", on); b.setAttribute("aria-selected", on); });
         if (repList) repList.hidden = t !== "rep";
         list.hidden = t !== "all";
       };
-      tabs.forEach((b) => b.addEventListener("click", () => { show(b.dataset.tab); try { history.replaceState(null, "", b.dataset.tab === "all" ? "#all" : location.pathname); } catch (e) {} }));
-      show(location.hash === "#all" || !reps.length ? "all" : "rep");
+      tabs.forEach((b) => b.addEventListener("click", () => { show(b.dataset.tab); try { history.replaceState(null, "", b.dataset.tab === "rep" ? "#rep" : location.pathname); } catch (e) {} }));
+      show(location.hash === "#rep" && reps.length ? "rep" : "all");
     }).catch(() => {
       list.innerHTML = '<li class="feed-empty">논문 데이터를 불러오지 못했습니다. 웹 서버(또는 GitHub Pages)에서 열어 주세요.</li>';
     });
