@@ -15,7 +15,7 @@
      "links": [                         (선택) 본문 아래 작은 바로가기 링크
        {"type": "press", "url": "https://..."}          → "기사 보기 ↗",
        {"type": "paper", "url": "https://doi.org/..."}   → "논문 원문 보기 ↗"
-       ("label": "BRIC 보기" 처럼 글자를 직접 정할 수도 있음. 본문 줄바꿈은 \n)
+       ("label": "BRIC 보기", "label_en": "BRIC" 처럼 글자를 직접 정할 수도 있음. 본문 줄바꿈은 \n)
      ]
    }
 
@@ -62,7 +62,7 @@
     const fit = p.image_fit === "contain" ? " news-img-contain" : "";
     const cover = imgs.length ? `<img src="${esc(imgs[0])}" class="news-img${fit}" alt="${title}" loading="lazy">` : "";
     const links = Array.isArray(p.links) ? p.links.filter((l) => l && l.url).map((l) =>
-      `<a class="news-link" href="${esc(l.url)}" target="_blank" rel="noopener noreferrer"${l.title ? ` title="${esc(l.title)}"` : ""}>${esc(l.label || tr(l.type === "paper" ? "news_link_paper" : "news_link_press"))} ↗</a>`
+      `<a class="news-link" href="${esc(l.url)}" target="_blank" rel="noopener noreferrer"${l.title ? ` title="${esc(l.title)}"` : ""}>${esc((lang() === "en" && l.label_en) || l.label || tr(l.type === "paper" ? "news_link_paper" : "news_link_press"))} ↗</a>`
     ).join("") : "";
     const thumbs = imgs.length > 1
       ? `<div class="news-thumbs">${imgs.map((src, i) => `<button type="button" class="news-thumb${i === 0 ? " active" : ""}" data-src="${esc(src)}" aria-label="${i + 1}"><img src="${esc(src)}" alt="" loading="lazy"></button>`).join("")}</div>`

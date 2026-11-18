@@ -26,7 +26,7 @@ Object.assign(translations.en, {
   pi_email_label: "Email",
   pi_profile_label: "Researcher Profiles",
   mem_researchers: "Researchers",
-  pub_total_label: "Total publications",
+  pub_total_label: "All Publications",
   footer_lab: "Noh Lab",
   footer_affil: "College of Pharmacy, Chonnam National University",
   footer_contact: "Contact",
