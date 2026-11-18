@@ -15,6 +15,18 @@
     ]
   },
   {
+    "date": "2026-08-03",
+    "category": "publication",
+    "title": "천식 임신부, 임신 초기 흡입 스테로이드 계속 써도 임신 결과 차이 없어",
+    "body": "JAMA Netw Open 게재",
+    "links": [
+      {
+        "type": "paper",
+        "url": "https://doi.org/10.1001/jamanetworkopen.2026.30781"
+      }
+    ]
+  },
+  {
     "date": "2026-06-12",
     "category": "award",
     "title": "노윤하 교수, 신진사회약학자상 수상",
@@ -50,6 +62,27 @@
         "source": "Diabetes Care",
         "title": "Glucagon-Like Peptide 1 Receptor Agonists and Risk of Nonarteritic Anterior Ischemic Optic Neuropathy in Patients With Type 2 Diabetes",
         "url": "https://doi.org/10.2337/dc25-2577"
+      }
+    ]
+  },
+  {
+    "date": "2026-01-14",
+    "category": "publication",
+    "title": "Gut 학술지 논문 출판",
+    "body": "소아 위산 억제제–염증성 장질환 연관성 확인\nPPI 처방 소아청소년서 위험비 1.37 관찰… 명확한 적응증 없을 때 더 높아",
+    "links": [
+      {
+        "type": "press",
+        "label": "BRIC 보기",
+        "url": "https://www.ibric.org/s.do?wxXmwuvctj"
+      },
+      {
+        "type": "press",
+        "url": "https://www.bosa.co.kr/news/articleView.html?idxno=2267828"
+      },
+      {
+        "type": "paper",
+        "url": "https://doi.org/10.1136/gutjnl-2025-337345"
       }
     ]
   },
