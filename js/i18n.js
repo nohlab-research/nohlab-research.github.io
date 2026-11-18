@@ -112,8 +112,8 @@ const translations = {
     news_cat_publication: "논문 게재",
     news_cat_conference: "학회·발표",
     news_cat_life: "연구실 생활",
-    news_link_press: "언론 보도",
-    news_link_paper: "논문",
+    news_link_press: "기사 보기",
+    news_link_paper: "논문 원문 보기",
 
     // ----------------------------------------------------------------------
     // 5. 논문 페이지 (Publications Page)
@@ -310,8 +310,8 @@ const translations = {
     news_cat_publication: "Publications",
     news_cat_conference: "Conferences",
     news_cat_life: "Lab Life",
-    news_link_press: "In the News",
-    news_link_paper: "Paper",
+    news_link_press: "News article",
+    news_link_paper: "Read the paper",
 
     // ----------------------------------------------------------------------
     // 5. Publications Page
