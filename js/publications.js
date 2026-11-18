@@ -29,18 +29,27 @@
 
       // 대표 논문 (rep: true) — 전체 목록과 같은 모양, 번호 대신 연도와 영향력지수 표시
       const reps = items.filter((p) => p.rep);
-      const repBox = document.getElementById("pub-rep");
-      if (repBox && reps.length) {
+      const repList = document.getElementById("pub-rep-list");
+      if (repList) {
         document.getElementById("pub-rep-list").innerHTML = reps.map((p) => {
           const link = p.u ? `<a class="pub-link" href="${esc(p.u)}" ${ext}>${/doi\.org/.test(p.u) ? "DOI" : "Link"} ↗</a>` : "";
           const badge = p.if ? ` <span class="pub-if">IF ${esc(p.if)}</span>` : "";
           return `<li class="pub-item"><span class="pub-number pub-number-year">${p.y}</span><div class="pub-details"><span class="pub-title">${esc(p.t)}</span><p class="pub-authors">${authors(p.a)}</p><p class="pub-journal"><em>${esc(p.j)}</em>${badge}</p>${link}</div></li>`;
         }).join("");
         document.getElementById("pub-rep-count").textContent = reps.length;
-        repBox.hidden = false;
       }
       const total = document.getElementById("pub-total-count");
       if (total) total.textContent = items.length;
+
+      // 탭 전환: 주소 끝이 #all 이면 전체 논문 탭으로 시작
+      const tabs = document.querySelectorAll(".pub-tabs [data-tab]");
+      const show = (t) => {
+        tabs.forEach((b) => { const on = b.dataset.tab === t; b.classList.toggle("active", on); b.setAttribute("aria-selected", on); });
+        if (repList) repList.hidden = t !== "rep";
+        list.hidden = t !== "all";
+      };
+      tabs.forEach((b) => b.addEventListener("click", () => { show(b.dataset.tab); try { history.replaceState(null, "", b.dataset.tab === "all" ? "#all" : location.pathname); } catch (e) {} }));
+      show(location.hash === "#all" || !reps.length ? "all" : "rep");
     }).catch(() => {
       list.innerHTML = '<li class="feed-empty">논문 데이터를 불러오지 못했습니다. 웹 서버(또는 GitHub Pages)에서 열어 주세요.</li>';
     });

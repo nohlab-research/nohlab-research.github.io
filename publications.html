@@ -47,13 +47,13 @@
 
   <main class="container section">
     <h1 class="page-title" data-i18n="pub_page_title">Publications</h1>
-    <!-- 대표 논문: data/publications.json 에서 "rep": true 와 "if": "영향력지수" 를 붙인 논문이 여기에 표시됩니다 -->
-    <details class="pub-rep" id="pub-rep" open hidden>
-      <summary class="pub-sec-title"><span data-i18n="pub_rep_title">대표 논문</span><span class="pub-sec-count" id="pub-rep-count"></span></summary>
-      <ul class="pub-list" id="pub-rep-list"></ul>
-    </details>
-    <p class="pub-total"><span data-i18n="pub_total_label">전체 논문</span> <strong id="pub-total-count">0</strong></p>
-    <ul class="pub-list" id="pub-list"></ul>
+    <!-- 탭: 대표 논문 / 전체 논문. 대표 논문은 data/publications.json 에서 "rep": true 와 "if": "영향력지수" 를 붙인 논문 -->
+    <div class="news-filters pub-tabs" role="tablist">
+      <button type="button" class="news-filter active" role="tab" data-tab="rep" aria-selected="true"><span data-i18n="pub_rep_title">대표 논문</span><span class="news-filter-count" id="pub-rep-count"></span></button>
+      <button type="button" class="news-filter" role="tab" data-tab="all" aria-selected="false"><span data-i18n="pub_total_label">전체 논문</span><span class="news-filter-count" id="pub-total-count"></span></button>
+    </div>
+    <ul class="pub-list" id="pub-rep-list" role="tabpanel"></ul>
+    <ul class="pub-list" id="pub-list" role="tabpanel" hidden></ul>
     <noscript><p>JavaScript를 활성화하면 논문 목록이 표시됩니다.</p></noscript>
   </main>
 
