@@ -20,9 +20,9 @@
     "body": "📚🥂🙌",
     "body_en": "📚🥂🙌",
     "images": [
+      "images/news/2026-09-semester-dinner/1.jpg",
       "images/news/2026-09-semester-dinner/2.jpg",
-      "images/news/2026-09-semester-dinner/3.mp4",
-      "images/news/2026-09-semester-dinner/1.jpg"
+      "images/news/2026-09-semester-dinner/3.mp4"
     ],
     "image_fit": "contain"
   },
@@ -30,7 +30,7 @@
     "date": "2026-09-01",
     "category": "award",
     "title": "노윤하 교수 연구팀, 한국연구재단 미래도전연구지원사업 선정",
-    "title_en": "Prof. Yunha Noh's team selected for the NRF Future Challenge Research Program",
+    "title_en": "Prof. Noh's team selected for the NRF Future Challenge Research Program",
     "body": "향후 5년간 총 8억 원 지원",
     "body_en": "KRW 800 million in funding over the next five years",
     "images": [
@@ -79,7 +79,7 @@
     "date": "2026-06-12",
     "category": "award",
     "title": "노윤하 교수, 신진사회약학자상 수상",
-    "title_en": "Prof. Yunha Noh receives the KASAP Young Investigator Award in Social Pharmacy",
+    "title_en": "Prof. Noh receives the KASAP Young Investigator Award in Social Pharmacy",
     "body": "감사합니다.",
     "body_en": "Thank you.",
     "images": [
@@ -139,7 +139,7 @@
     "date": "2026-02-07",
     "category": "award",
     "title": "노윤하 교수, 광주광역시약사회 감사패 수상",
-    "title_en": "Prof. Yunha Noh receives a plaque of appreciation from the Gwangju Pharmaceutical Association",
+    "title_en": "Prof. Noh receives a plaque of appreciation from the Gwangju Pharmaceutical Association",
     "body": "감사합니다.",
     "body_en": "Thank you.",
     "images": [
@@ -202,6 +202,24 @@
         "source": "Annals of Internal Medicine",
         "title": "Glucagon-Like Peptide-1 Receptor Agonists and Risk for Gastroesophageal Reflux Disease in Patients With Type 2 Diabetes",
         "url": "https://doi.org/10.7326/ANNALS-24-03420"
+      }
+    ]
+  },
+  {
+    "date": "2025-05-23",
+    "category": "award",
+    "title": "노윤하 교수, 약물역학위해관리학회지 우수논문상 수상",
+    "title_en": "Prof. Noh receives the Outstanding Paper Award from the Korean Society for Pharmacoepidemiology and Risk Management (KoPERM)",
+    "body": "2025 대한약물역학위해관리학회 춘계학술대회 (중증 근무력증 환자 예후 연구)",
+    "body_en": "2025 KoPERM Spring Conference (study on the prognosis of patients with myasthenia gravis)",
+    "images": [
+      "images/news/2025-05-koperm-award/1.jpg"
+    ],
+    "image_fit": "contain",
+    "links": [
+      {
+        "type": "paper",
+        "url": "https://doi.org/10.56142/perm.25.0003"
       }
     ]
   }
