@@ -210,11 +210,17 @@
     "category": "award",
     "title": "노윤하 교수, 약물역학위해관리학회지 우수논문상 수상",
     "title_en": "Prof. Yunha Noh receives the Outstanding Paper Award from the Korean Society for Pharmacoepidemiology and Risk Management (KoPERM)",
-    "body": "중증근무력증 환자 예후 연구",
-    "body_en": "Study on the prognosis of patients with myasthenia gravis",
+    "body": "2025 대한약물역학위해관리학회 춘계학술대회 (중증근무력증 환자 예후 연구)",
+    "body_en": "2025 KoPERM Spring Conference (study on the prognosis of patients with myasthenia gravis)",
     "images": [
-      "images/news/2025-05-koperm-award/1.jpg",
-      "images/news/2025-05-koperm-award/2.jpg"
+      "images/news/2025-05-koperm-award/1.jpg"
+    ],
+    "image_fit": "contain",
+    "links": [
+      {
+        "type": "paper",
+        "url": "https://doi.org/10.56142/perm.25.0003"
+      }
     ]
   }
 ]
